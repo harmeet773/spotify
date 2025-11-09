@@ -1,7 +1,7 @@
 import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
-import querystring from "querystring";
+
 
 dotenv.config();
 
@@ -14,6 +14,6 @@ const {
   REDIRECT_URI,
 } = process.env;
 
-app.listen(port, () => console.log(`Server running on ${port}`));
+// app.listen(port, () => console.log(`Server running on ${port}`));
 
 app.get('/',(req,res) => { res.json({status:"running"})   }  );
